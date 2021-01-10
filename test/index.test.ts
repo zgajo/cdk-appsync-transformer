@@ -7,8 +7,10 @@ import { Runtime, Code, Function } from '@aws-cdk/aws-lambda';
 import { App, Stack } from '@aws-cdk/core';
 
 import { AppSyncTransformer } from '../src/index';
+import MappedTransformer from './mappedTransformer';
 
 const testSchemaPath = path.join(__dirname, 'schema.graphql');
+const testCustomTransformerSchemaPath = path.join(__dirname, 'customTransformSchema.graphql');
 const functionDirectiveTestFunctionName = 'test-function';
 const testHttpEndpoint = 'https://jsonplaceholder.typicode.com';
 
@@ -258,4 +260,86 @@ test('addLambdaDataSourceAndResolvers', () => {
       TypeName: resolver.typeName,
     });
   }
+});
+
+test('Custom Pre Transform', () => {
+  const mockApp = new App();
+  const stack = new Stack(mockApp, 'custom-transform-stack');
+
+  const appSyncTransformer = new AppSyncTransformer(stack, 'test-transformer', {
+    schemaPath: testCustomTransformerSchemaPath,
+    apiName: 'custom-transforms',
+    authorizationConfig: {
+      defaultAuthorization: {
+        authorizationType: AuthorizationType.API_KEY,
+      },
+    },
+    preCdkTransformers: [
+      new MappedTransformer(),
+    ],
+  });
+
+  expect(appSyncTransformer.httpResolvers).toBeTruthy();
+
+  const endpointResolvers = appSyncTransformer.httpResolvers[testHttpEndpoint];
+  expect(endpointResolvers.length).toEqual(1);
+
+  for (const resolver of endpointResolvers) {
+    expect(appSyncTransformer.nestedAppsyncStack).toHaveResource('AWS::AppSync::Resolver', {
+      FieldName: resolver.fieldName,
+      TypeName: resolver.typeName,
+    });
+  }
+});
+
+test('Custom Post Transform', () => {
+  const mockApp = new App();
+  const stack = new Stack(mockApp, 'custom-transform-stack');
+
+  const appSyncTransformer = new AppSyncTransformer(stack, 'test-transformer', {
+    schemaPath: testCustomTransformerSchemaPath,
+    apiName: 'custom-transforms',
+    authorizationConfig: {
+      defaultAuthorization: {
+        authorizationType: AuthorizationType.API_KEY,
+      },
+    },
+    postCdkTransformers: [
+      new MappedTransformer(),
+    ],
+  });
+
+  expect(appSyncTransformer.httpResolvers).toBeTruthy();
+
+  const endpointResolvers = appSyncTransformer.httpResolvers[testHttpEndpoint];
+  expect(endpointResolvers.length).toEqual(1);
+
+  for (const resolver of endpointResolvers) {
+    expect(appSyncTransformer.nestedAppsyncStack).toHaveResource('AWS::AppSync::Resolver', {
+      FieldName: resolver.fieldName,
+      TypeName: resolver.typeName,
+    });
+  }
+});
+
+test('Invalid Transformer', () => {
+  const mockApp = new App();
+  const stack = new Stack(mockApp, 'custom-transform-stack');
+
+  const willThrow = () => {
+    new AppSyncTransformer(stack, 'test-transformer', {
+      schemaPath: testCustomTransformerSchemaPath,
+      apiName: 'custom-transforms',
+      authorizationConfig: {
+        defaultAuthorization: {
+          authorizationType: AuthorizationType.API_KEY,
+        },
+      },
+      preCdkTransformers: [
+        '123abc',
+      ],
+    });
+  };
+
+  expect(willThrow).toThrow();
 });

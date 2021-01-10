@@ -4,7 +4,7 @@ const project = new AwsCdkConstructLibrary({
   authorAddress: 'kcswinner@gmail.com',
   authorName: 'Ken Winner',
   name: 'cdk-appsync-transformer',
-  repository: 'https://github.com/ken/cdk-appsync-transformer.git',
+  repository: 'https://github.com/kcwinner/cdk-appsync-transformer.git',
   stability: 'experimental',
   catalog: {
     twitter: 'KenWin0x539',
@@ -22,6 +22,19 @@ const project = new AwsCdkConstructLibrary({
   mergify: false,
   rebuildBot: false,
   codeCov: true,
+  dependabotOptions: {
+    ignore: [
+      { dependencyName: '@aws-cdk*' },
+    ],
+  },
+
+  jestOptions: {
+    jestConfig: {
+      testPathIgnorePatterns: [
+        '<rootDir>/test/mappedTransformer',
+      ],
+    },
+  },
 
   // Ignore our generated appsync files
   npmignore: [
@@ -57,7 +70,7 @@ const project = new AwsCdkConstructLibrary({
     'ts-jest',
   ],
   bundledDeps: [
-    'graphql',
+    'graphql@^14.5.8',
     'graphql-auth-transformer',
     'graphql-connection-transformer',
     'graphql-dynamodb-transformer',
