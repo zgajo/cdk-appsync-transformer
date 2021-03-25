@@ -1,0 +1,2098 @@
+{
+  "author": {
+    "email": "kcswinner@gmail.com",
+    "name": "Ken Winner",
+    "roles": [
+      "author"
+    ]
+  },
+  "bundled": {
+    "graphql": "^14.5.8",
+    "graphql-auth-transformer": "^6.23.3",
+    "graphql-connection-transformer": "^4.19.4",
+    "graphql-dynamodb-transformer": "^6.21.4",
+    "graphql-function-transformer": "^2.4.4",
+    "graphql-http-transformer": "^4.16.4",
+    "graphql-key-transformer": "^2.20.4",
+    "graphql-mapping-template": "^4.18.1",
+    "graphql-relational-schema-transformer": "^2.16.1",
+    "graphql-transformer-common": "^4.18.1",
+    "graphql-transformer-core": "^6.25.1",
+    "graphql-ttl-transformer": "^1.1.0",
+    "graphql-versioned-transformer": "^4.16.4"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-appsync": "^1.77.0",
+    "@aws-cdk/aws-cognito": "^1.77.0",
+    "@aws-cdk/aws-dynamodb": "^1.77.0",
+    "@aws-cdk/aws-iam": "^1.77.0",
+    "@aws-cdk/aws-lambda": "^1.77.0",
+    "@aws-cdk/core": "^1.77.0",
+    "constructs": "^3.2.27"
+  },
+  "dependencyClosure": {
+    "@aws-cdk/assets": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.Assets",
+          "packageId": "Amazon.CDK.Assets",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-assets",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.assets"
+        },
+        "js": {
+          "npm": "@aws-cdk/assets"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.assets",
+          "module": "aws_cdk.assets"
+        }
+      }
+    },
+    "@aws-cdk/aws-applicationautoscaling": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.ApplicationAutoScaling",
+          "packageId": "Amazon.CDK.AWS.ApplicationAutoScaling",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "applicationautoscaling",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.applicationautoscaling"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-applicationautoscaling"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-applicationautoscaling",
+          "module": "aws_cdk.aws_applicationautoscaling"
+        }
+      }
+    },
+    "@aws-cdk/aws-appsync": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.AppSync",
+          "packageId": "Amazon.CDK.AWS.AppSync",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "appsync",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.appsync"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-appsync"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-appsync",
+          "module": "aws_cdk.aws_appsync"
+        }
+      }
+    },
+    "@aws-cdk/aws-autoscaling-common": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.AutoScaling.Common",
+          "packageId": "Amazon.CDK.AWS.AutoScaling.Common",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "autoscaling-common",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.autoscaling.common"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-autoscaling-common"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-autoscaling-common",
+          "module": "aws_cdk.aws_autoscaling_common"
+        }
+      }
+    },
+    "@aws-cdk/aws-certificatemanager": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.CertificateManager",
+          "packageId": "Amazon.CDK.AWS.CertificateManager",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "certificatemanager",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.certificatemanager"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-certificatemanager"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-certificatemanager",
+          "module": "aws_cdk.aws_certificatemanager"
+        }
+      }
+    },
+    "@aws-cdk/aws-cloudformation": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.CloudFormation",
+          "packageId": "Amazon.CDK.AWS.CloudFormation",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cloudformation",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.cloudformation"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-cloudformation"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-cloudformation",
+          "module": "aws_cdk.aws_cloudformation"
+        }
+      }
+    },
+    "@aws-cdk/aws-cloudwatch": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.CloudWatch",
+          "packageId": "Amazon.CDK.AWS.CloudWatch",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cloudwatch",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.cloudwatch"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-cloudwatch"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-cloudwatch",
+          "module": "aws_cdk.aws_cloudwatch"
+        }
+      }
+    },
+    "@aws-cdk/aws-codeguruprofiler": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.CodeGuruProfiler",
+          "packageId": "Amazon.CDK.AWS.CodeGuruProfiler",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "codeguruprofiler",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.codeguruprofiler"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-codeguruprofiler"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-codeguruprofiler",
+          "module": "aws_cdk.aws_codeguruprofiler"
+        }
+      }
+    },
+    "@aws-cdk/aws-cognito": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Cognito",
+          "packageId": "Amazon.CDK.AWS.Cognito",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cognito",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.cognito"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-cognito"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-cognito",
+          "module": "aws_cdk.aws_cognito"
+        }
+      }
+    },
+    "@aws-cdk/aws-dynamodb": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.DynamoDB",
+          "packageId": "Amazon.CDK.AWS.DynamoDB",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "dynamodb",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.dynamodb"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-dynamodb"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-dynamodb",
+          "module": "aws_cdk.aws_dynamodb"
+        }
+      }
+    },
+    "@aws-cdk/aws-ec2": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.EC2",
+          "packageId": "Amazon.CDK.AWS.EC2",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "ec2",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.ec2"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-ec2"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-ec2",
+          "module": "aws_cdk.aws_ec2"
+        }
+      }
+    },
+    "@aws-cdk/aws-ecr": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.ECR",
+          "packageId": "Amazon.CDK.AWS.ECR",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "ecr",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.ecr"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-ecr"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-ecr",
+          "module": "aws_cdk.aws_ecr"
+        }
+      }
+    },
+    "@aws-cdk/aws-ecr-assets": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Ecr.Assets",
+          "packageId": "Amazon.CDK.ECR.Assets",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "ecr-assets",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.ecr.assets"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-ecr-assets"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-ecr-assets",
+          "module": "aws_cdk.aws_ecr_assets"
+        }
+      }
+    },
+    "@aws-cdk/aws-efs": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.EFS",
+          "packageId": "Amazon.CDK.AWS.EFS",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "efs",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.efs"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-efs"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-efs",
+          "module": "aws_cdk.aws_efs"
+        }
+      }
+    },
+    "@aws-cdk/aws-events": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Events",
+          "packageId": "Amazon.CDK.AWS.Events",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "events",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.events"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-events"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-events",
+          "module": "aws_cdk.aws_events"
+        }
+      }
+    },
+    "@aws-cdk/aws-iam": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.IAM",
+          "packageId": "Amazon.CDK.AWS.IAM",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "iam",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.iam"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-iam"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-iam",
+          "module": "aws_cdk.aws_iam"
+        }
+      }
+    },
+    "@aws-cdk/aws-kms": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.KMS",
+          "packageId": "Amazon.CDK.AWS.KMS",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "kms",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.kms"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-kms"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-kms",
+          "module": "aws_cdk.aws_kms"
+        }
+      }
+    },
+    "@aws-cdk/aws-lambda": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Lambda",
+          "packageId": "Amazon.CDK.AWS.Lambda",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "lambda",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.lambda"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-lambda"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-lambda",
+          "module": "aws_cdk.aws_lambda"
+        }
+      }
+    },
+    "@aws-cdk/aws-logs": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Logs",
+          "packageId": "Amazon.CDK.AWS.Logs",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "logs",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.logs"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-logs"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-logs",
+          "module": "aws_cdk.aws_logs"
+        }
+      }
+    },
+    "@aws-cdk/aws-rds": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.RDS",
+          "packageId": "Amazon.CDK.AWS.RDS",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "rds",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.rds"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-rds"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-rds",
+          "module": "aws_cdk.aws_rds"
+        }
+      }
+    },
+    "@aws-cdk/aws-route53": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Route53",
+          "packageId": "Amazon.CDK.AWS.Route53",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "route53",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.route53"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-route53"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-route53",
+          "module": "aws_cdk.aws_route53"
+        }
+      }
+    },
+    "@aws-cdk/aws-s3": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.S3",
+          "packageId": "Amazon.CDK.AWS.S3",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "s3",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.s3"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-s3"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-s3",
+          "module": "aws_cdk.aws_s3"
+        }
+      }
+    },
+    "@aws-cdk/aws-s3-assets": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.S3.Assets",
+          "packageId": "Amazon.CDK.AWS.S3.Assets",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "s3-assets",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.s3.assets"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-s3-assets"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-s3-assets",
+          "module": "aws_cdk.aws_s3_assets"
+        }
+      }
+    },
+    "@aws-cdk/aws-sam": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.SAM",
+          "packageId": "Amazon.CDK.AWS.SAM",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "sam",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.sam"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-sam"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-sam",
+          "module": "aws_cdk.aws_sam"
+        }
+      }
+    },
+    "@aws-cdk/aws-secretsmanager": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.SecretsManager",
+          "packageId": "Amazon.CDK.AWS.SecretsManager",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "secretsmanager",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.secretsmanager"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-secretsmanager"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-secretsmanager",
+          "module": "aws_cdk.aws_secretsmanager"
+        }
+      }
+    },
+    "@aws-cdk/aws-sns": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.SNS",
+          "packageId": "Amazon.CDK.AWS.SNS",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "sns",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.sns"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-sns"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-sns",
+          "module": "aws_cdk.aws_sns"
+        }
+      }
+    },
+    "@aws-cdk/aws-sqs": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.SQS",
+          "packageId": "Amazon.CDK.AWS.SQS",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "sqs",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.sqs"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-sqs"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-sqs",
+          "module": "aws_cdk.aws_sqs"
+        }
+      }
+    },
+    "@aws-cdk/aws-ssm": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.SSM",
+          "packageId": "Amazon.CDK.AWS.SSM",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "ssm",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.ssm"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-ssm"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.aws-ssm",
+          "module": "aws_cdk.aws_ssm"
+        }
+      }
+    },
+    "@aws-cdk/cloud-assembly-schema": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.CloudAssembly.Schema",
+          "packageId": "Amazon.CDK.CloudAssembly.Schema",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-cloud-assembly-schema",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.cloudassembly.schema"
+        },
+        "js": {
+          "npm": "@aws-cdk/cloud-assembly-schema"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.cloud-assembly-schema",
+          "module": "aws_cdk.cloud_assembly_schema"
+        }
+      }
+    },
+    "@aws-cdk/core": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK",
+          "packageId": "Amazon.CDK",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "core",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.core"
+        },
+        "js": {
+          "npm": "@aws-cdk/core"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.core",
+          "module": "aws_cdk.core"
+        }
+      }
+    },
+    "@aws-cdk/custom-resources": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.CustomResources",
+          "packageId": "Amazon.CDK.AWS.CustomResources",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-customresources",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.customresources"
+        },
+        "js": {
+          "npm": "@aws-cdk/custom-resources"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.custom-resources",
+          "module": "aws_cdk.custom_resources"
+        }
+      }
+    },
+    "@aws-cdk/cx-api": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.CXAPI",
+          "packageId": "Amazon.CDK.CXAPI",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-cx-api",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.cxapi"
+        },
+        "js": {
+          "npm": "@aws-cdk/cx-api"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.cx-api",
+          "module": "aws_cdk.cx_api"
+        }
+      }
+    },
+    "@aws-cdk/region-info": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.RegionInfo",
+          "packageId": "Amazon.CDK.RegionInfo",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-region-info",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.regioninfo"
+        },
+        "js": {
+          "npm": "@aws-cdk/region-info"
+        },
+        "python": {
+          "classifiers": [
+            "Framework :: AWS CDK",
+            "Framework :: AWS CDK :: 1"
+          ],
+          "distName": "aws-cdk.region-info",
+          "module": "aws_cdk.region_info"
+        }
+      }
+    },
+    "constructs": {
+      "targets": {
+        "dotnet": {
+          "namespace": "Constructs",
+          "packageId": "Constructs"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "constructs",
+            "groupId": "software.constructs"
+          },
+          "package": "software.constructs"
+        },
+        "js": {
+          "npm": "constructs"
+        },
+        "python": {
+          "distName": "constructs",
+          "module": "constructs"
+        }
+      }
+    }
+  },
+  "description": "cdk-appsync-transformer",
+  "docs": {
+    "stability": "experimental"
+  },
+  "homepage": "https://github.com/kcwinner/cdk-appsync-transformer.git",
+  "jsiiVersion": "1.21.0 (build 4262b22)",
+  "keywords": [
+    "amplify",
+    "appsync",
+    "aws",
+    "cdk"
+  ],
+  "license": "Apache-2.0",
+  "metadata": {
+    "jsii": {
+      "pacmak": {
+        "hasDefaultInterfaces": true
+      }
+    }
+  },
+  "name": "cdk-appsync-transformer",
+  "readme": {
+    "markdown": "# AppSync Transformer Construct for AWS CDK\n\n![build](https://github.com/kcwinner/cdk-appsync-transformer/workflows/Build/badge.svg)\n[![codecov](https://codecov.io/gh/kcwinner/cdk-appsync-transformer/branch/main/graph/badge.svg)](https://codecov.io/gh/kcwinner/cdk-appsync-transformer)\n[![dependencies Status](https://david-dm.org/kcwinner/cdk-appsync-transformer/status.svg)](https://david-dm.org/kcwinner/cdk-appsync-transformer)\n[![npm](https://img.shields.io/npm/dt/cdk-appsync-transformer)](https://www.npmjs.com/package/cdk-appsync-transformer)\n\n[![npm version](https://badge.fury.io/js/cdk-appsync-transformer.svg)](https://badge.fury.io/js/cdk-appsync-transformer)\n[![PyPI version](https://badge.fury.io/py/cdk-appsync-transformer.svg)](https://badge.fury.io/py/cdk-appsync-transformer)\n\n## Notice\n\nFor CDK versions < 1.64.0 please use [aws-cdk-appsync-transformer](https://github.com/kcwinner/aws-cdk-appsync-transformer).\n\n## Why This Package\n\nIn April 2020 I wrote a [blog post](https://www.trek10.com/blog/appsync-with-the-aws-cloud-development-kit) on using the AWS Cloud Development Kit with AppSync. I wrote my own transformer in order to emulate AWS Amplify's method of using GraphQL directives in order to template a lot of the Schema Definition Language.\n\nThis package is my attempt to convert all of that effort into a separate construct in order to clean up the process.\n\n## How Do I Use It\n\n### Example Usage\n\nAPI With Default Values\n```ts\nimport { AppSyncTransformer } from 'cdk-appsync-transformer';\n...\nnew AppSyncTransformer(this, \"my-cool-api\", {\n    schemaPath: 'schema.graphql'\n});\n```\n\nschema.graphql\n```graphql\ntype Customer @model\n    @auth(rules: [\n        { allow: groups, groups: [\"Admins\"] },\n        { allow: private, provider: iam, operations: [read, update] }\n    ]) {\n        id: ID!\n        firstName: String!\n        lastName: String!\n        active: Boolean!\n        address: String!\n}\n\ntype Product @model\n    @auth(rules: [\n        { allow: groups, groups: [\"Admins\"] },\n        { allow: public, provider: iam, operations: [read] }\n    ]) {\n        id: ID!\n        name: String!\n        description: String!\n        price: String!\n        active: Boolean!\n        added: AWSDateTime!\n        orders: [Order] @connection\n}\n\ntype Order @model\n    @key(fields: [\"id\", \"productID\"]) {\n        id: ID!\n        productID: ID!\n        total: String!\n        ordered: AWSDateTime!\n}\n```\n\n### [Supported Amplify Directives](https://docs.amplify.aws/cli/graphql-transformer/directives)\n\nTested:\n* [@model](https://docs.amplify.aws/cli/graphql-transformer/directives#model)\n* [@auth](https://docs.amplify.aws/cli/graphql-transformer/directives#auth)\n* [@connection](https://docs.amplify.aws/cli/graphql-transformer/directives#connection)\n* [@key](https://docs.amplify.aws/cli/graphql-transformer/directives#key)\n* [@function](https://docs.amplify.aws/cli/graphql-transformer/directives#function)\n  * These work differently here than they do in Amplify - see [Functions](#functions) below\n\nExperimental:\n* [@versioned](https://docs.amplify.aws/cli/graphql-transformer/directives#versioned)\n* [@http](https://docs.amplify.aws/cli/graphql-transformer/directives#http)\n* [@ttl](https://github.com/flogy/graphql-ttl-transformer)\n  * Community directive transformer\n\nNot Yet Supported:\n* [@searchable](https://docs.amplify.aws/cli/graphql-transformer/directives#searchable)\n* [@predictions](https://docs.amplify.aws/cli/graphql-transformer/directives#predictions)\n\n### Custom Transformers & Directives\n\n*This is an advanced feature*\n\nIt is possible to add pre/post custom transformers that extend the Amplify ITransformer. To see a simple example please look at [mapped-transformer.ts](./test/mappedTransformer/mapped-transformer.ts) in the tests section.\n\nThis allows you to modify the data either before or after the [cdk-transformer](./src/transformer/cdk-transformer.ts) is run.\n\n*Limitation:* Due to some limitations with `jsii` we are unable to export the ITransformer interface from `graphql-transformer-core` to ensure complete type safety. Instead, there is a validation method that will check for `name`, `directive` and `typeDefinitions` members in the transformers that are passed in.\n\n```ts\nimport { PreTransformer, PostTransformer } from './customTransformers';\nnew AppSyncTransformer(this, \"my-cool-api\", {\n    schemaPath: 'schema.graphql',\n    preCdkTransformers: [\n      new PreTransformer(),\n    ],\n    postCdkTransformers: [\n      new PostTransformer(),\n    ]\n});\n```\n\n### Authentication\n\nUser Pool Authentication\n```ts\nconst userPool = new UserPool(this, 'my-cool-user-pool', {\n    ...\n})\n...\nconst userPoolClient = new UserPoolClient(this, `${id}-client`, {\n    userPool: this.userPool,\n    ...\n})\n...\nnew AppSyncTransformer(this, \"my-cool-api\", {\n    schemaPath: 'schema.graphql',\n    authorizationConfig: {\n        defaultAuthorization: {\n            authorizationType: AuthorizationType.USER_POOL,\n            userPoolConfig: {\n                userPool: userPool,\n                appIdClientRegex: userPoolClient.userPoolClientId,\n                defaultAction: UserPoolDefaultAction.ALLOW\n            }\n        }\n    }\n});\n```\n\n#### IAM\n\nUnauth Role: TODO\n\nAuth Role: Unsupported. Authorized roles (Lambda Functions, EC2 roles, etc) are required to setup their own role permissions.\n\n### Functions\n\nThere are two ways to add functions as data sources (and their resolvers)\n\n#### Convenience Method\n\n`addLambdaDataSourceAndResolvers` will do the same thing as the manual version below. However, if you want to customize mapping templates you will have to bypass this and set up the data source and resolvers yourself\n\n#### Manually\n\nFields with the `@function` directive will be accessible via `appsyncTransformer.functionResolvers`. It will return a map like so:\n```ts\n{\n  'user-function': [\n    { typeName: 'Query', fieldName: 'listUsers' },\n    { typeName: 'Query', fieldName: 'getUser' },\n    { typeName: 'Mutation', fieldName: 'createUser' },\n    { typeName: 'Mutation', fieldName: 'updateUser' }\n  ]\n}\n```\n\nYou can grab your function resolvers via the map and assign them your own function(s). Example might be something like:\n```ts\nconst userFunction = new Function(...);\nconst userFunctionDataSource = appsyncTransformer.appsyncAPI.addLambdaDataSource('some-id', userFunction);\n\nconst dataSourceMap = {\n  'user-function': userFunctionDataSource\n};\n\nfor (const [functionName, resolver] of Object.entries(appsyncTransformer.functionResolvers)) {\n  const dataSource = dataSourceMap[functionName];\n  new Resolver(this.nestedAppsyncStack, `${resolver.typeName}-${resolver.fieldName}-resolver`, {\n    api: appsyncTransformer.appsyncAPI,\n    typeName: resolver.typeName,\n    fieldName: resolver.fieldName,\n    dataSource: dataSource,\n    requestMappingTemplate: resolver.defaultRequestMappingTemplate,\n    responseMappingTemplate: resolver.defaultResponseMappingTemplate // This defaults to allow errors to return to the client instead of throwing\n  });\n}\n```\n\n### Table Name Map\n\nOften you will need to access your table names in a lambda function or elsewhere. The cdk-appsync-transformer will return these values as a map of table names to cdk tokens. These tokens will be resolved at deploy time. They can be accessed via `appSyncTransformer.tableNameMap`.\n\n```ts\n{\n  CustomerTable: '${Token[TOKEN.1300]}',\n  ProductTable: '${Token[TOKEN.1346]}',\n  OrderTable: '${Token[TOKEN.1392]}',\n  BlogTable: '${Token[TOKEN.1442]}',\n  PostTable: '${Token[TOKEN.1492]}',\n  CommentTable: '${Token[TOKEN.1546]}',\n  UserTable: '${Token[TOKEN.1596]}'\n}\n```\n\n### DataStore Support\n\n1. Pass `syncEnabled: true` to the `AppSyncTransformerProps`\n1. Generate necessary exports (see [Code Generation](#code-generation) below)\n\n### Cfn Outputs\n\n* `appsyncGraphQLEndpointOutput` - the appsync graphql endpoint\n\n### Code Generation\n\nI've written some helpers to generate code similarly to how AWS Amplify generates statements and types. You can find the code [here](https://github.com/kcwinner/advocacy/tree/master/cdk-amplify-appsync-helpers).\n\n## Versioning\n\nI will *attempt* to align the major and minor version of this package with [AWS CDK], but always check the release descriptions for compatibility.\n\nI currently support [![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/kcwinner/cdk-appsync-transformer/@aws-cdk/core)](https://github.com/aws/aws-cdk)\n\n## Contributing\n\nSee [CONTRIBUTING](CONTRIBUTING.md) for details\n\n## License\n\nDistributed under [Apache License, Version 2.0](LICENSE)\n\n## References\n* [aws cdk](https://aws.amazon.com/cdk)\n* [amplify-cli](https://github.com/aws-amplify/amplify-cli)\n* [Amplify Directives](https://docs.amplify.aws/cli/graphql-transformer/directives)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kcwinner/cdk-appsync-transformer.git"
+  },
+  "schema": "jsii/0.10.0",
+  "targets": {
+    "js": {
+      "npm": "cdk-appsync-transformer"
+    },
+    "python": {
+      "distName": "cdk-appsync-transformer",
+      "module": "cdk_appsync_transformer"
+    }
+  },
+  "types": {
+    "cdk-appsync-transformer.AppSyncTransformer": {
+      "assembly": "cdk-appsync-transformer",
+      "base": "@aws-cdk/core.Construct",
+      "docs": {
+        "stability": "experimental",
+        "summary": "AppSyncTransformer Construct."
+      },
+      "fqn": "cdk-appsync-transformer.AppSyncTransformer",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "src/appsync-transformer.ts",
+          "line": 147
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "@aws-cdk/core.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "cdk-appsync-transformer.AppSyncTransformerProps"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/appsync-transformer.ts",
+        "line": 106
+      },
+      "methods": [
+        {
+          "docs": {
+            "custom": {
+              "function": "directive of the schema"
+            },
+            "stability": "experimental",
+            "summary": "Adds the function as a lambdaDataSource to the AppSync api Adds all of the functions resolvers to the AppSync api."
+          },
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 518
+          },
+          "name": "addLambdaDataSourceAndResolvers",
+          "parameters": [
+            {
+              "docs": {
+                "summary": "The function name specified in the."
+              },
+              "name": "functionName",
+              "type": {
+                "primitive": "string"
+              }
+            },
+            {
+              "docs": {
+                "summary": "The id to give."
+              },
+              "name": "id",
+              "type": {
+                "primitive": "string"
+              }
+            },
+            {
+              "docs": {
+                "summary": "The lambda function to attach."
+              },
+              "name": "lambdaFunction",
+              "type": {
+                "fqn": "@aws-cdk/aws-lambda.IFunction"
+              }
+            },
+            {
+              "name": "options",
+              "optional": true,
+              "type": {
+                "fqn": "@aws-cdk/aws-appsync.DataSourceOptions"
+              }
+            }
+          ],
+          "returns": {
+            "type": {
+              "fqn": "@aws-cdk/aws-appsync.LambdaDataSource"
+            }
+          }
+        }
+      ],
+      "name": "AppSyncTransformer",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental",
+            "summary": "The cdk GraphqlApi construct."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 110
+          },
+          "name": "appsyncAPI",
+          "type": {
+            "fqn": "@aws-cdk/aws-appsync.GraphqlApi"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental",
+            "summary": "The Lambda Function resolvers designated by the function directive https://github.com/kcwinner/cdk-appsync-transformer#functions."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 136
+          },
+          "name": "functionResolvers",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "collection": {
+                  "elementtype": {
+                    "fqn": "cdk-appsync-transformer.CdkTransformerFunctionResolver"
+                  },
+                  "kind": "array"
+                }
+              },
+              "kind": "map"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 140
+          },
+          "name": "httpResolvers",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "collection": {
+                  "elementtype": {
+                    "fqn": "cdk-appsync-transformer.CdkTransformerHttpResolver"
+                  },
+                  "kind": "array"
+                }
+              },
+              "kind": "map"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental",
+            "summary": "The NestedStack that contains the AppSync resources."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 115
+          },
+          "name": "nestedAppsyncStack",
+          "type": {
+            "fqn": "@aws-cdk/core.NestedStack"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental",
+            "summary": "The outputs from the SchemaTransformer."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 125
+          },
+          "name": "outputs",
+          "type": {
+            "fqn": "cdk-appsync-transformer.SchemaTransformerOutputs"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental",
+            "summary": "The AppSync resolvers from the transformer minus any function resolvers."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 130
+          },
+          "name": "resolvers",
+          "type": {
+            "primitive": "any"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental",
+            "summary": "Map of cdk table tokens to table names."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 120
+          },
+          "name": "tableNameMap",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "any"
+              },
+              "kind": "map"
+            }
+          }
+        }
+      ]
+    },
+    "cdk-appsync-transformer.AppSyncTransformerProps": {
+      "assembly": "cdk-appsync-transformer",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-appsync-transformer.AppSyncTransformerProps",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/appsync-transformer.ts",
+        "line": 37
+      },
+      "name": "AppSyncTransformerProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "Relative path where schema.graphql exists."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 41
+          },
+          "name": "schemaPath",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "`${id}-api`",
+            "stability": "experimental",
+            "summary": "String value representing the api name."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 53
+          },
+          "name": "apiName",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "API_KEY authorization config",
+            "remarks": "{@link AuthorizationConfig} type defining authorization for AppSync GraphqlApi. Defaults to API_KEY",
+            "stability": "experimental",
+            "summary": "Optional."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 47
+          },
+          "name": "authorizationConfig",
+          "optional": true,
+          "type": {
+            "fqn": "@aws-cdk/aws-appsync.AuthorizationConfig"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "FieldLogLevel.NONE",
+            "remarks": "{@link FieldLogLevel} type for AppSync GraphqlApi log level",
+            "stability": "experimental",
+            "summary": "Optional."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 65
+          },
+          "name": "fieldLogLevel",
+          "optional": true,
+          "type": {
+            "fqn": "@aws-cdk/aws-appsync.FieldLogLevel"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "undefined",
+            "remarks": "Additonal custom transformers to run after the CDK resource generations.\nMostly useful for deep level customization of the generated CDK CloudFormation resources.\nThese should extend Transformer class from graphql-transformer-core",
+            "stability": "experimental",
+            "summary": "Optional."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 90
+          },
+          "name": "postCdkTransformers",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "any"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "undefined",
+            "remarks": "Additonal custom transformers to run prior to the CDK resource generations.\nParticularly useful for custom directives.\nThese should extend Transformer class from graphql-transformer-core",
+            "stability": "experimental",
+            "summary": "Optional."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 80
+          },
+          "name": "preCdkTransformers",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "any"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "false",
+            "stability": "experimental",
+            "summary": "Whether to enable Amplify DataStore and Sync Tables."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 59
+          },
+          "name": "syncEnabled",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "false",
+            "stability": "experimental",
+            "summary": "Determines whether xray should be enabled on the AppSync API."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/appsync-transformer.ts",
+            "line": 71
+          },
+          "name": "xrayEnabled",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        }
+      ]
+    },
+    "cdk-appsync-transformer.CdkTransformerFunctionResolver": {
+      "assembly": "cdk-appsync-transformer",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-appsync-transformer.CdkTransformerFunctionResolver",
+      "interfaces": [
+        "cdk-appsync-transformer.CdkTransformerResolver"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/transformer/cdk-transformer.ts",
+        "line": 44
+      },
+      "name": "CdkTransformerFunctionResolver",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 45
+          },
+          "name": "defaultRequestMappingTemplate",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 46
+          },
+          "name": "defaultResponseMappingTemplate",
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ]
+    },
+    "cdk-appsync-transformer.CdkTransformerGlobalSecondaryIndex": {
+      "assembly": "cdk-appsync-transformer",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-appsync-transformer.CdkTransformerGlobalSecondaryIndex",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/transformer/cdk-transformer.ts",
+        "line": 11
+      },
+      "name": "CdkTransformerGlobalSecondaryIndex",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 12
+          },
+          "name": "indexName",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 14
+          },
+          "name": "partitionKey",
+          "type": {
+            "fqn": "cdk-appsync-transformer.CdkTransformerTableKey"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 13
+          },
+          "name": "projection",
+          "type": {
+            "primitive": "any"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 15
+          },
+          "name": "sortKey",
+          "type": {
+            "fqn": "cdk-appsync-transformer.CdkTransformerTableKey"
+          }
+        }
+      ]
+    },
+    "cdk-appsync-transformer.CdkTransformerHttpResolver": {
+      "assembly": "cdk-appsync-transformer",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-appsync-transformer.CdkTransformerHttpResolver",
+      "interfaces": [
+        "cdk-appsync-transformer.CdkTransformerResolver"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/transformer/cdk-transformer.ts",
+        "line": 38
+      },
+      "name": "CdkTransformerHttpResolver",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 40
+          },
+          "name": "defaultRequestMappingTemplate",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 41
+          },
+          "name": "defaultResponseMappingTemplate",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 39
+          },
+          "name": "httpConfig",
+          "type": {
+            "primitive": "any"
+          }
+        }
+      ]
+    },
+    "cdk-appsync-transformer.CdkTransformerResolver": {
+      "assembly": "cdk-appsync-transformer",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-appsync-transformer.CdkTransformerResolver",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/transformer/cdk-transformer.ts",
+        "line": 33
+      },
+      "name": "CdkTransformerResolver",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 35
+          },
+          "name": "fieldName",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 34
+          },
+          "name": "typeName",
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ]
+    },
+    "cdk-appsync-transformer.CdkTransformerTable": {
+      "assembly": "cdk-appsync-transformer",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-appsync-transformer.CdkTransformerTable",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/transformer/cdk-transformer.ts",
+        "line": 23
+      },
+      "name": "CdkTransformerTable",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 28
+          },
+          "name": "globalSecondaryIndexes",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "fqn": "cdk-appsync-transformer.CdkTransformerGlobalSecondaryIndex"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 30
+          },
+          "name": "gsiResolvers",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 25
+          },
+          "name": "partitionKey",
+          "type": {
+            "fqn": "cdk-appsync-transformer.CdkTransformerTableKey"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 29
+          },
+          "name": "resolvers",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 24
+          },
+          "name": "tableName",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 26
+          },
+          "name": "sortKey",
+          "optional": true,
+          "type": {
+            "fqn": "cdk-appsync-transformer.CdkTransformerTableKey"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 27
+          },
+          "name": "ttl",
+          "optional": true,
+          "type": {
+            "fqn": "cdk-appsync-transformer.CdkTransformerTableTtl"
+          }
+        }
+      ]
+    },
+    "cdk-appsync-transformer.CdkTransformerTableKey": {
+      "assembly": "cdk-appsync-transformer",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-appsync-transformer.CdkTransformerTableKey",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/transformer/cdk-transformer.ts",
+        "line": 6
+      },
+      "name": "CdkTransformerTableKey",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 7
+          },
+          "name": "name",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 8
+          },
+          "name": "type",
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ]
+    },
+    "cdk-appsync-transformer.CdkTransformerTableTtl": {
+      "assembly": "cdk-appsync-transformer",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-appsync-transformer.CdkTransformerTableTtl",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/transformer/cdk-transformer.ts",
+        "line": 18
+      },
+      "name": "CdkTransformerTableTtl",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 19
+          },
+          "name": "attributeName",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/cdk-transformer.ts",
+            "line": 20
+          },
+          "name": "enabled",
+          "type": {
+            "primitive": "boolean"
+          }
+        }
+      ]
+    },
+    "cdk-appsync-transformer.SchemaTransformerOutputs": {
+      "assembly": "cdk-appsync-transformer",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-appsync-transformer.SchemaTransformerOutputs",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/transformer/schema-transformer.ts",
+        "line": 53
+      },
+      "name": "SchemaTransformerOutputs",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/schema-transformer.ts",
+            "line": 54
+          },
+          "name": "cdkTables",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "fqn": "cdk-appsync-transformer.CdkTransformerTable"
+              },
+              "kind": "map"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/schema-transformer.ts",
+            "line": 56
+          },
+          "name": "functionResolvers",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "collection": {
+                  "elementtype": {
+                    "fqn": "cdk-appsync-transformer.CdkTransformerFunctionResolver"
+                  },
+                  "kind": "array"
+                }
+              },
+              "kind": "map"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/schema-transformer.ts",
+            "line": 57
+          },
+          "name": "httpResolvers",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "collection": {
+                  "elementtype": {
+                    "fqn": "cdk-appsync-transformer.CdkTransformerHttpResolver"
+                  },
+                  "kind": "array"
+                }
+              },
+              "kind": "map"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/schema-transformer.ts",
+            "line": 59
+          },
+          "name": "mutations",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "fqn": "cdk-appsync-transformer.CdkTransformerResolver"
+              },
+              "kind": "map"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/schema-transformer.ts",
+            "line": 55
+          },
+          "name": "noneResolvers",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "fqn": "cdk-appsync-transformer.CdkTransformerResolver"
+              },
+              "kind": "map"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/schema-transformer.ts",
+            "line": 58
+          },
+          "name": "queries",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "map"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/transformer/schema-transformer.ts",
+            "line": 60
+          },
+          "name": "subscriptions",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "fqn": "cdk-appsync-transformer.CdkTransformerResolver"
+              },
+              "kind": "map"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "version": "1.77.9",
+  "fingerprint": "G5XRuRCSfzzzuIPQ1sL3ie8gugfmF+6JAySWQElla6U="
+}
